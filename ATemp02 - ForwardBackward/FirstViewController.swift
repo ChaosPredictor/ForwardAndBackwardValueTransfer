@@ -26,6 +26,15 @@ class FirstViewController: UIViewController {
 
     @IBAction func FirstButtonPushed(_ sender: UIButton) {
         print("pushed")
+        performSegue(withIdentifier: "moveToSecond", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moveToSecond" {
+            let secondVC = segue.destination as! SecondViewController
+            
+            secondVC.data2 = FirstTextField.text!
+        }
     }
     
 }

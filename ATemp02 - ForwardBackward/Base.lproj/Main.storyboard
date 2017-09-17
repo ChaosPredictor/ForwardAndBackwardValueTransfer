@@ -28,9 +28,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="FirstTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="tfa-Dl-gDb"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77G-qD-3mI">
                                 <rect key="frame" x="16" y="244" width="343" height="46"/>
@@ -46,7 +43,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="FirstButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nB-0s-hJB"/>
-                                    <segue destination="BXp-Z2-GDy" kind="show" id="wmz-XK-YDC"/>
+                                    <segue destination="BXp-Z2-GDy" kind="show" identifier="moveToSecond" id="wmz-XK-YDC"/>
                                 </connections>
                             </button>
                         </subviews>
