@@ -8,14 +8,18 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, CanReceive {
 
+    
+    
     @IBOutlet weak var FirstLabel: UILabel!
     
     @IBOutlet weak var FirstTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+   
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -34,7 +38,13 @@ class FirstViewController: UIViewController {
             let secondVC = segue.destination as! SecondViewController
             
             secondVC.data2 = FirstTextField.text!
+            
+            secondVC.delegate = self
         }
+    }
+    
+    func dataReceived(data1: String) {
+        FirstLabel.text = data1
     }
     
 }
