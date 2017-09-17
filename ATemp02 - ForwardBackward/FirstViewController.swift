@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
+    @IBOutlet weak var FirstLabel: UILabel!
+    
+    @IBOutlet weak var FirstTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func FirstButtonPushed(_ sender: UIButton) {
+        print("pushed")
+    }
+    
 }
 
