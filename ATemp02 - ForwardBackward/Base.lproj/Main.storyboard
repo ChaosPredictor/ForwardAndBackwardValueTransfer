@@ -96,7 +96,7 @@
                     </view>
                     <connections>
                         <outlet property="SecondLabel" destination="LSo-mP-Ysk" id="m9p-Dx-W7b"/>
-                        <outlet property="SecondtextField" destination="NdA-j5-6ba" id="wvB-G7-afM"/>
+                        <outlet property="SecondTextField" destination="NdA-j5-6ba" id="0Dn-Zn-yx4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poe-La-pLG" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -21,7 +21,7 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var SecondLabel: UILabel!
     
-    @IBOutlet weak var SecondtextField: UITextField!
+    @IBOutlet weak var SecondTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func SecondButtonPushed(_ sender: UIButton) {
-        delegate?.dataReceived(data1: SecondtextField.text!)
+        delegate?.dataReceived(data1: SecondTextField.text!)
         dismiss(animated: true, completion: nil)
 
     

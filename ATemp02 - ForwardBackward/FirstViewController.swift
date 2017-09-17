@@ -10,8 +10,6 @@ import UIKit
 
 class FirstViewController: UIViewController, CanReceive {
 
-    
-    
     @IBOutlet weak var FirstLabel: UILabel!
     
     @IBOutlet weak var FirstTextField: UITextField!
